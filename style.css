@@ -1,0 +1,80 @@
+nav {
+  background-color: black;
+  opacity: 90%;
+  text-align: left;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+h6{
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 250%;
+}
+
+h5 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 200%;
+}
+
+h4 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 200;
+  color: rgb(226, 74, 13);
+  font-size: 550%;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 200;
+  color: rgb(226, 74, 13);
+  font-size: 100%;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 20px;
+  float: left;
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  color: white;
+  align-content: left;
+  margin-left: 100px;
+}
+
+.col-md{
+  display: inline-block;
+}
+
+html{
+  background-color: rgb(19, 18, 18);
+}
