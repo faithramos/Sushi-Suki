@@ -4,9 +4,7 @@ nav {
   text-align: left;
   position: fixed;
   width: 100%;
-  height: auto;
-  padding: 1%;
-  padding-top: 2%;
+  height: 14%;
 }
 
 nav a {
@@ -17,21 +15,19 @@ nav ul {
   list-style: none;
 }
 
-h1{
+h3{
   font-family: 'Prompt', sans-serif;
   font-weight: 400;
   color: white;
-  font-size: 250%;
 }
 
-h2 {
+h5 {
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
   color: white;
-  font-size: 200%;
 }
 
-h4 {
+h2 {
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
   color: rgb(226, 74, 13);
@@ -49,7 +45,8 @@ nav li {
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
+  margin-top: 20px;
   margin-left: 20px;
   float: left;
 }
