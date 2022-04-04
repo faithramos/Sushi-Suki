@@ -60,10 +60,13 @@ nav li {
 label {
   color: white;
   align-content: left;
-  margin-top: 20px;
-  margin-left: 100px;
+  font-weight: 400;
 }
 
 .col-md{
   display: inline-block;
+}
+
+.row{
+  padding: 8px;
 }
