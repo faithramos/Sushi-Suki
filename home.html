@@ -18,7 +18,7 @@
     <header>
         <div>
             <nav class="align-items-center">
-                <img class="logo" src="SushiSukiLogo.png">
+                <a href="home.html"><img src="SushiSukiLogo.png" class=logo></a>
                 <ul class="mt-2">
                     <a href="home.html"><li><h3>Sushi-Suki</h3></li></a>
                     <a href="menu.html"><li><h5>Menu</h5></li> </a>
@@ -28,48 +28,95 @@
         </div>
     </header>
 
-    <div class="mb-2 bg-black text-white orderform">
-        <img src="sushibake3.png" width=100%>
-        <p class="title">Order Here  |  Or Call 0123-4567</p>
-    
-      
-            <div class="mb-3 row order">
-                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email address</label>
-                <div class="col-sm-5">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
+    <div class="mb-2 bg-black text-white">
+    <img src="sushibake3.png" width=100%>
+    <p class="title">Order Here  |  Or Call 0123-4567</p>
+
+    <form class="orderform">
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-5">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" required>
             </div>
 
-            <div class="mb-3 row order">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-5">
-                <input type="password" class="form-control" id="inputPassword">
-                </div>
+            <div class="col-md-5">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-6">
+            <label for="validationDefaultUsername" class="form-label">Email</label>
+                <input type="email" class="form-control" required>
             </div>
 
-            <div class="mb-3 row order">
-                <label for="floatingTextarea" class="col-sm-2 col-form-label">Complete Shipping Address</label>
-                <div class="col-sm-5">
-                <input type="text" class="form-control"placeholder="Blk & Lot No., Street, City" id="floatingTextarea">
-                </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+        <div class="col-md-10">
+            <label for="validationDefaultUsername" class="form-label">Shipping Address</label>
+              <input type="text" class="form-control" required>
+        </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-2">
+            <label for="validationDefault04" class="form-label">Courier</label>
+            <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select...</option>
+                <option>Lalamove</option>
+                <option>Grab</option>
+            </select>
+            </div>
+            
+            <div class="col-md-4">
+                <label for="validationDefault04" class="form-label">Mode of Payment</label>
+                <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select...</option>
+                <option>BDO Online Deposit</option>
+                <option>BDO Over-the-Counter Deposit</option>
+                <option>BDO Machine Deposit</option>
+                <option>GCash</option>
+                </select>
             </div>
 
-            <div class="mb-3 row order">
-                <label for="floatingTextarea" class="col-sm-2 col-form-label">Special Requests</label>
-                <div class="col-sm-5">
-                <input type="text" class="form-control"placeholder="Write your comments/requests here" id="floatingTextarea" style="height: 100px;">
-                </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Facebook/Instagram Username</label>
+                <input type="text" class="form-control">
+                <div id="emailHelp" class="form-text">For contact purposes only.</div>
             </div>
+        </div>
 
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-10">
+                <label for="validationDefaultUsername" class="form-label">Special Requests</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-10">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                I have read and agree to the <a href="terms&conditions.html" style="color: rgb(226, 74, 13);">Terms and Conditions</a>
-                </label>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                I have read and agree to the <a href=terms&conditions.html style="color: rgb(226, 74, 13);">Terms and Conditions </a>
+              </label>
             </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-10">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </div>
 
-    </div>  
-
+      </form>
   
 
 
