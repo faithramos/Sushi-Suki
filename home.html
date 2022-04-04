@@ -20,7 +20,7 @@
             <nav class="align-items-center">
                 <img class="logo" src="SushiSukiLogo.png">
                 <ul class="mt-2">
-                    <a href="index.html"><li><h3>Sushi-Suki</h3></li></a>
+                    <a href="home.html"><li><h3>Sushi-Suki</h3></li></a>
                     <a href="menu.html"><li><h5>Menu</h5></li> </a>
                     <a href="terms&conditions.html"><li><h5>Terms & Conditions</h5></li> </a>
                 </ul>
@@ -28,33 +28,47 @@
         </div>
     </header>
 
-    <div>
-        <img src="sushibake2.png" width=100%>
-        <h2>Order Here  |  Or Call 0123-4567</h2>
-    </div>
-      
-    <div class="form-floating mb-3">
-        <label for="floatingInput">Email address</label>
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-    </div>
+    <div class="mb-2 bg-black text-white orderform">
+        <img src="sushibake3.png" width=100%>
+        <p class="title">Order Here  |  Or Call 0123-4567</p>
     
-    <div class="form-floating">
-        <label for="floatingTextarea">Complete Shipping Address</label>
-        <textarea class="form-control" placeholder="Address" id="floatingTextarea"></textarea>
-    </div>
-
-    <div class="form-floating">
-        <label for="floatingTextarea2">Comments</label>
-        <textarea class="form-control" placeholder="Requests/Notes" id="floatingTextarea2" style="height: 100px"></textarea>
-    </div>
-
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input" type="checkbox"> I have read the <a href="terms&conditions.html"><h1>Terms and Conditions</h1></a>
-        </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">
-      </div>
       
+            <div class="mb-3 row order">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email address</label>
+                <div class="col-sm-5">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div class="mb-3 row order">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-5">
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+
+            <div class="mb-3 row order">
+                <label for="floatingTextarea" class="col-sm-2 col-form-label">Complete Shipping Address</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control"placeholder="Blk & Lot No., Street, City" id="floatingTextarea">
+                </div>
+            </div>
+
+            <div class="mb-3 row order">
+                <label for="floatingTextarea" class="col-sm-2 col-form-label">Special Requests</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control"placeholder="Write your comments/requests here" id="floatingTextarea" style="height: 100px;">
+                </div>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                I have read and agree to the <a href="terms&conditions.html" style="color: rgb(226, 74, 13);">Terms and Conditions</a>
+                </label>
+            </div>
+
+    </div>  
 
   
 
