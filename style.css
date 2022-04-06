@@ -187,7 +187,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .socialinks a{
-  font-size: 30px;
+  font-size: 40px;
   color:inherit;
   width: 80px;
   display: inline-block;
@@ -200,11 +200,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .list {
   
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Prompt';
   text-align: center;
   color: brown;
 }
+
 .list a:hover{
   color: rgb(212, 131, 8);
 }
@@ -242,6 +243,7 @@ outline: none;
   background: rgb(207, 156, 80);
   padding:0 20px;
   color:rgb(77, 20, 20);
+  font-size: 20px;
 }
 
 input{
