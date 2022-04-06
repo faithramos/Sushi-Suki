@@ -173,3 +173,103 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: 'Prompt', sans-serif;
   color: black;
 }
+
+
+
+/*Kate's Part*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer{
+  padding: 50px;
+  background-color: rgb(248, 215, 175);
+  width: 2000px;
+}
+
+.socialinks {
+  text-align: center;
+  padding-bottom: 25px;
+  color: brown;
+
+}
+
+.socialinks a{
+  font-size: 40px;
+  color:inherit;
+  width: 80px;
+  display: inline-block;
+  
+}
+.socialinks a:hover{
+  color: rgb(212, 131, 8);
+  opacity: 0.8;
+}
+
+.list {
+  
+  font-size: 20px;
+  font-family: 'Prompt';
+  text-align: center;
+  color: brown;
+}
+
+.list a:hover{
+  color: rgb(212, 131, 8);
+}
+
+.list a{
+  color: inherit;
+  text-decoration: none;
+  padding: 0 25px;
+ margin-bottom: 30px;
+}
+
+.emailbox{
+  font-family: 'Prompt';
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.emailbox i{
+  color: rgb(77, 20, 20);
+  background-color: rgb(207, 156, 80);
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.emailbox button, input{
+border: none;
+outline: none;
+}
+
+.emailbox button{
+  background: rgb(207, 156, 80);
+  padding:0 20px;
+  color:rgb(77, 20, 20);
+  font-size: 20px;
+}
+
+input{
+  width: 0px;
+  transition: 0.8s;
+}
+
+.email{
+  line-height: 50px;
+  border: none;
+  outline: none;
+}
+
+.email:hover> input,input:focus{
+  width: 300px;
+  padding: 0 10px;
+}
+ 
