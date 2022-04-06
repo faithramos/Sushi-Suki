@@ -1,14 +1,22 @@
+html{
+  background-color: black;
+}
+
 nav {
   background-color: black;
   opacity: 90%;
   text-align: left;
   position: fixed;
   width: 100%;
-  height: 14%;
+  height: auto;
 }
 
 nav a {
   text-decoration: none;
+}
+
+li{
+  color: rgb(226, 74, 13);
 }
 
 nav ul {
@@ -27,21 +35,28 @@ h5 {
   color: white;
 }
 
-h2 {
+.title {
   font-family: 'Prompt', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   color: rgb(226, 74, 13);
-  font-size: 550%;
+  font-size: 300%;
   text-align: center;
+  padding:  40px;
 }
 
-a {
-  display: inline-block;
+.checkout {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: rgb(226, 74, 13);
+  font-size: 250%;
+  text-align: center;
+  padding:  40px;
 }
 
 nav li {
   display: inline-block;
-  padding: 20px;
+  margin: 15px;
+  margin-top: 21px;
 }
 
 .logo {
@@ -51,21 +66,40 @@ nav li {
   float: left;
 }
 
-img {
-  width: 100%;
+.input{
+  padding: 20px;
 }
 
 label {
   color: white;
   align-content: left;
-  margin-top: 20px;
-  margin-left: 100px;
+  font-weight: 400;
 }
 
 .col-md{
   display: inline-block;
 }
 
-html{
-  background-color: rgb(19, 18, 18);
+.row{
+  padding: 8px;
 }
+
+.btn{
+  background-color: rgb(226, 74, 13);
+  color: white;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: rgb(226, 74, 13)!important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgb(190, 67, 18)
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: rgb(235, 173, 148); 
+}
+
