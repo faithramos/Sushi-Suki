@@ -50,7 +50,7 @@ h5 {
   color: rgb(226, 74, 13);
   font-size: 250%;
   text-align: center;
-  padding:  40px;
+  padding:  10px;
 }
 
 nav li {
@@ -103,3 +103,6 @@ label {
   background-color: rgb(235, 173, 148); 
 }
 
+.card-title{
+  color: black;
+}
