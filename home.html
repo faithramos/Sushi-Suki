@@ -115,6 +115,7 @@
             <p class="checkout">Checkout</p>
             
             <div class="row g-5 justify-content-center">
+                <p class="category">Main Dishes</p>
                 <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
                     <img src="MediumMaki.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Baked Cali Maki </b>
@@ -140,7 +141,7 @@
                 </div>
 
                 <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="BakedSalmon.jpg" style="width: 100%" class="border rounded-3">
+                    <img src="BakedSalmon2.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Baked Salmon </b>
                     <p class="subcheckout"> Medium Sized Pan ()</p>
                     <p class="price">Php 230</p>
@@ -150,6 +151,51 @@
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
+            </div>
+
+            <div class="row g-5 justify-content-center">
+                <p class="category">Desserts</p>
+                <div class="col-md-2 justify-content-center" style="padding: 20px; background-color: rgb(233, 213, 213);">
+                    <img src="BBcheescake.png" style="width: 100%" class="border rounded-3">
+                </div>
+
+                <div class="col-md-5 justify-content-center" style="padding: 20px; background-color: rgb(233, 213, 213);">
+                    <div class="row" style="margin-bottom: 35px;">
+                    <h1> Available Sizes</h1>
+                    </div>
+                    <div class="row g-5 cheesecakeoptions">
+                        <div class="col-md-8">
+                        <b style="font-family: Prompt, sans-serif; font-size: 30px;">7" cake</b>
+                        <p class="price">Php 250</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="0" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-5 cheesecakeoptions">
+                        <div class="col-md-8">
+                            <b style="font-family: Prompt, sans-serif; font-size: 30px;">7" cake</b>
+                            <p class="price">Php 250</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+               
             </div>
 
 
@@ -191,8 +237,8 @@
     <div class="emailbox">
         <i class="fa fa-envelope fa-2x"></i>
         <form class="email">
-        <input class="inputemail" type = "email" id="email" value="" placeholder="Enter your email" required>
-        <button class="subscribe"type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <input class="inputfooter" type = "email" id="email" value="" placeholder="Enter your email" required>
+        <button class="subscribe" type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal">
             Subscribe Now!
         </button>
         </form>

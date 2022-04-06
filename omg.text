@@ -38,3 +38,12 @@
             </div>
 
     </div>  
+
+    <b class="checkoutname"> Blueberry Cheesecake </b>
+                            <p class="subcheckout"> 8x8 Pan ()</p>
+                            <p class="price">Php 750</p>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="0" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>

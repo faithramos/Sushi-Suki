@@ -53,6 +53,14 @@ h5 {
   padding:  10px;
 }
 
+.category {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 180%;
+  text-align: center;
+}
+
 nav li {
   display: inline-block;
   margin: 15px;
@@ -181,6 +189,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 30px;
 }
 
+.cheesecakeoptions{
+  border: solid rgb(235, 173, 148);
+}
 /*Kate's Part*/
 
 * {
@@ -263,7 +274,7 @@ outline: none;
   font-size: 20px;
 }
 
-.inputemail{
+.inputfooter{
   width: 0px;
   transition: 0.8s;
 }
