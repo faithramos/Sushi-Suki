@@ -33,7 +33,7 @@
 
     <div class="mb-2 bg-black text-white">
         <img src="sushibake3.png" width=100%>
-        <p class="title">Order Here  |  Or Call 0123-4567</p>
+        <p class="title">Order Here  |  Or Dial 0123-4567</p>
 
         <form class="orderform">
 
@@ -119,6 +119,7 @@
                     <img src="MediumMaki.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Baked Cali Maki </b>
                     <p class="subcheckout"> Medium Pan ()</p>
+                    <p class="price">Php 380</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                         <input class="quantity" min="0" name="quantity" value="0" type="number">
@@ -130,13 +131,25 @@
                     <img src="SmallMaki.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Baked Cali Maki </b>
                     <p class="subcheckout"> Medium Sized Pan ()</p>
+                    <p class="price">Php 250</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                         <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
-                
+
+                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                    <img src="BakedSalmon.jpg" style="width: 100%" class="border rounded-3">
+                    <b class="checkoutname"> Baked Salmon </b>
+                    <p class="subcheckout"> Medium Sized Pan ()</p>
+                    <p class="price">Php 230</p>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
             </div>
 
 
@@ -178,7 +191,7 @@
     <div class="emailbox">
         <i class="fa fa-envelope fa-2x"></i>
         <form class="email">
-        <input class="inputemail" type = "text" id="email" value="" placeholder="Enter your email" required>
+        <input class="inputemail" type = "email" id="email" value="" placeholder="Enter your email" required>
         <button class="subscribe"type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal">
             Subscribe Now!
         </button>
