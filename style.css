@@ -187,7 +187,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer{
   padding: 50px;
   background-color: rgb(248, 215, 175);
-  width: 2000px;
+  
 }
 
 .socialinks {
@@ -241,7 +241,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: rgb(77, 20, 20);
   background-color: rgb(207, 156, 80);
   width: 50px;
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -253,6 +253,7 @@ outline: none;
 .emailbox button{
   background: rgb(207, 156, 80);
   padding:0 20px;
+  height: 60px;
   color:rgb(77, 20, 20);
   font-size: 20px;
 }
@@ -263,7 +264,7 @@ input{
 }
 
 .email{
-  line-height: 50px;
+  line-height: 45px;
   border: none;
   outline: none;
 }
