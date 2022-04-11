@@ -108,7 +108,7 @@ label {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
 }
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: rgb(235, 173, 148); 
+  background-color: rgb(235, 173, 148);
 }
 
 input[type="number"] {
@@ -150,7 +150,7 @@ input[type=number]::-webkit-outer-spin-button {
 .number-input button:after {
   display: inline-block;
   position: absolute;
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: '\f077';
   transform: translate(-50%, -50%) rotate(180deg);
@@ -214,7 +214,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer{
   padding: 50px;
   background-color: rgb(248, 215, 175);
-  
+
 }
 
 .socialinks {
@@ -229,7 +229,7 @@ input[type=number]::-webkit-outer-spin-button {
   color:inherit;
   width: 80px;
   display: inline-block;
-  
+
 }
 .socialinks a:hover{
   color: rgb(212, 131, 8);
@@ -237,7 +237,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .list {
-  
+
   font-size: 20px;
   font-family: 'Prompt';
   text-align: center;
@@ -300,4 +300,52 @@ outline: none;
   width: 300px;
   padding: 0 10px;
 }
- 
+
+.textandc {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  color: white;
+  font-size: 150%;
+  transform: translate(-50%, 50%);
+}
+
+.imagetandc {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 50%;
+}
+
+
+.tandc {
+  margin: 30px 0;
+  line-height: 1.6
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 100%;
+  text-align: left;
+}
+
+.tandc2 {
+  margin: 30px 0;
+  line-height: 1.6
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: 'Prompt', sans-serif;
+  color: rgb(226, 74, 13);
+  font-size: 100%;
+  text-align: left;
+}
+.titleandc{
+  background-color:rgb(225, 225, 225)
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: white
+  font-weight: bold;
+  text-align: center;
+
+}
