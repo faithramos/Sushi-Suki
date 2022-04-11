@@ -177,6 +177,12 @@ input[type=number]::-webkit-outer-spin-button {
   color: black;
 }
 
+.checkoutname2{
+  font-family: 'Prompt', sans-serif;
+  font-size: auto;
+  color: black;
+}
+
 .subcheckout{
   font-family: 'Prompt', sans-serif;
   color: black;
@@ -196,6 +202,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 20px;
 }
 
+tr{
+  align-self: center;
+}
 /*Kate's Part*/
 
 * {
