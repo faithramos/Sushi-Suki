@@ -189,9 +189,13 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 30px;
 }
 
-.cheesecakeoptions{
-  border: solid rgb(235, 173, 148);
+.cheesecakeprice{
+  font-size: 'Prompt', sans-serif;
+  color: rgb(226, 74, 13);
+  font-weight: 700;
+  font-size: 20px;
 }
+
 /*Kate's Part*/
 
 * {
