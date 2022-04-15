@@ -17,54 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
-<script>
-    var deliveryDate = document.getElementById( "deliveryDate" );
-    var today = new Date();
-    var next2week = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
-
-    var QmediumMaki = document.getElementById( "QmediumMaki" );
-    var QsmallMaki = document.getElementById( "QsmallMaki" );
-    var Qbakedsalmon = document.getElementById( "Qbakedsalmon" );
-    var Qcheesecake8 = document.getElementById( "Qcheesecake8" );
-    var Qcheesecake7 = document.getElementById( "Qcheesecake7" );
-    var Qcheesecake6 = document.getElementById( "Qcheesecake6" );
-    var Qcheesecake5 = document.getElementById( "Qcheesecake5" );
-    var Qchocochip = document.getElementById( "Qchocochip" );
-    var Qcrinkles = document.getElementById( "Qcrinkles" );
-    var Qsugarcookies = document.getElementById( "Qsugarcookies" );
-    var Qextranori = document.getElementById( "Qextranori" );
-    var Qextraspicy = document.getElementById( "Qextraspicy" );
-    var Qextracheese = document.getElementById( "Qextracheese" );
-    var Qsmallbrownrice = document.getElementById( "Qsmallbrownrice" );
-    var Qmediumbrownrice = document.getElementById( "Qmediumbrownrice" );
-
-
-    var PmediumMaki = QmediumMaki*380
-    var PsmallMaki = QsmallMaki*250
-    var Pbakedsalmon = Qbakedsalmon*230
-    var Pcheesecake8 = Qcheesecake8*750
-    var Pcheesecake7 = Qcheesecake7*650
-    var Pcheesecake6 = Qcheesecake6*550
-    var Pcheesecake5 = Qcheesecake5*450
-    var Pchocochip = Qchocochip*120
-    var Pcrinkles = Qcrinkles*120
-    var Psugarcookies = Qsugarcookies*90
-    var Pextranori = Qextranori*25
-    var Pextraspicy = Qextraspicy*30
-    var Pextracheese = Qextracheese*30
-    var Psmallbrownrice = Qsmallbrownrice*10
-    var Pmediumbrownrice = Qmediumbrownrice*20
-
-
-function ValidDateFunction() {
-    if (deliveryDate >= next2week) {
-    alert("Success!")
-    } else {
-    alert("Invalid Date! Must be at least 2 weeks from now")
-    }
-    }
-
-</script>
 <body>
     <header>
         <div>
@@ -81,7 +33,7 @@ function ValidDateFunction() {
 
     <div class="mb-2 bg-black text-white">
         <img src="sushibake3.png" width=100%>
-        <p class="title">Order Form</p>
+        <p class="title">Order Here  |  Or Dial 0123-4567</p>
 
         <form class="orderform">
 
@@ -105,7 +57,7 @@ function ValidDateFunction() {
 
                 <div class="col-md-4">
                     <label for="validationDefaultUsername" class="form-label">Contact Number</label>
-                    <input type="number" class="form-control" required>
+                    <input type="text" class="form-control" required>
                 </div>
             </div>
 
@@ -113,18 +65,6 @@ function ValidDateFunction() {
                 <div class="col-md-10">
                     <label for="validationDefaultUsername" class="form-label">Shipping Address</label>
                     <input type="text" class="form-control" required>
-                </div>
-            </div>
-
-            <div class="row g-5 justify-content-center">
-                <div class="col-md-5">
-                <label for="validationDefaultUsername" class="form-label">Date</label>
-                    <input type="date" class="form-control" id="delveryDate" required>
-                </div>
-
-                <div class="col-md-5">
-                    <label for="validationDefaultUsername" class="form-label">Time</label>
-                    <input type="time" class="form-control" required>
                 </div>
             </div>
 
@@ -152,7 +92,7 @@ function ValidDateFunction() {
                 <div class="col-md-4">
                     <label for="validationDefaultUsername" class="form-label">Facebook/Instagram Username</label>
                     <input type="text" class="form-control" required>
-                    <div id="socmed" class="form-text">For contact purposes only.</div>
+                    <div id="emailHelp" class="form-text">For contact purposes only.</div>
                 </div>
             </div>
 
@@ -183,10 +123,11 @@ function ValidDateFunction() {
                     <p class="price">Php 380</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="QmediumMaki">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
+            
 
                 <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
                     <img src="SmallMaki.png" style="width: 100%" class="border rounded-3">
@@ -195,7 +136,7 @@ function ValidDateFunction() {
                     <p class="price">Php 250</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="QsmallMaki">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
@@ -207,11 +148,13 @@ function ValidDateFunction() {
                     <p class="price">Php 230</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qbakedsalmon">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
+            
             </div>
+
 
             <div class="row g-2  justify-content-center">
 
@@ -234,26 +177,26 @@ function ValidDateFunction() {
                             <tr>
                                 <td>
                                     <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">8x8 Pan</b>
-                                    <p class="cheesecakeprice">Php 750</p>
+                                    <span class="price"><p class="cheesecakeprice">Php 750</p></span>
                                 </td>
 
                                 <td>
                                     <div class="number-input">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake8">
+                                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                     </div>
                                 </td>
 
                                 <td>
                                     <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">7" tub cake</b>
-                                    <p class="cheesecakeprice">Php 650</p>
+                                    <span class = "price"><p class="cheesecakeprice">Php 650</p></span>
                                 </td>
 
                                 <td>
                                     <div class="number-input">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake7">
+                                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                     </div>
                                 </td>
@@ -261,42 +204,36 @@ function ValidDateFunction() {
                             <tr>
                                 <td>
                                     <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">6" jr. cake</b>
-                                    <p class="cheesecakeprice">Php 550</p>
+                                    <span class = "price"><p class="cheesecakeprice">Php 550</p></span>
                                 </td>
 
                                 <td>
                                     <div class="number-input">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake6">
+                                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                     </div>
                                 </td>
 
                                 <td>
                                     <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">5" aluminum pan</b>
-                                    <p class="cheesecakeprice">Php 450</p>
+                                    <span class="price"><p class="cheesecakeprice">Php 550</p></span>
                                 </td>
 
                                 <td>
                                     <div class="number-input">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake5">
+                                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                     </div>
                                 </td>
                             </tr>
                         </table>
                         
-
-                        
-                        
-                        
+                    
                     </td>
                 </table>
-               
             </div>
-
-            
 
             <div class="row g-5 justify-content-center" style="margin: 30px;">
             
@@ -307,7 +244,7 @@ function ValidDateFunction() {
                     <p class="price">Php 120</p>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="chocochip">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
@@ -316,10 +253,10 @@ function ValidDateFunction() {
                     <img src="Crinkles.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Crinkles </b>
                     <p class="subcheckout"> 6 pcs</p>
-                    <p class="price">Php 120</p>
+                    <span class="price"><p class="price">Php 120</p></span>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="crinkles">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
@@ -328,105 +265,128 @@ function ValidDateFunction() {
                     <img src="SugarCookies.png" style="width: 100%" class="border rounded-3">
                     <b class="checkoutname"> Sugar Cookies </b>
                     <p class="subcheckout"> 6 pcs </p>
-                    <p class="price">Php 90</p>
+                    <span class="price"><p class="price">Php 90</p></span>
                     <div class="number-input">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="sugarcookies">
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                 </div>
                 
+            <!-- Order Total -->
+           <div class="container-fluid mt-5">
+               <h3 class="mb-5 text-center">Order Total</h3>
+              
+               <div class="row justify-content-center">
 
-            </div>
+            
+                <div class="col-md-10" >
+                    <div class="table-responsive">
+                        <div class="table-wrapper">
+                        <table id="TotalTable" class="table">
+                            <thead>
+                                <tr>
+                                    <th class="product">Product </th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th class="text-center"><span id="amount" class="amount">Amount</span></th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody class="ordertotaltd">
+                                <tr>
+                                <th scope="row" class="product" ><img src="MediumMaki.png" alt=""style="height: 100px;  border: solid; border-radius:10px; border-color:rgb(233, 213, 213);">  </th>
+                                <td>Baked Cali Maki <br> (Medium )</td>
+                                <td>Php 380</td>
+                                <td>0</td>
+                                <td>0.00</td>         
+                                </tr>
 
-            <div class="row g-5 justify-content-center">
-                <p class="category">Add-Ons</p>
+                                <tr>
+                                <th scope="row" class="product" ><img src="SmallMaki.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213); "></th>
+                                <td>Baked Cali Maki <br> (Small)</td>
+                                <td>Php 250</td>
+                                <td>0</td>
+                                <td>0.00</td>      
+                                </tr>
 
-                <div class="table table-borderless col-md-5 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
-                    <table style="margin-top: 25px">
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Nori</b>
-                            <p class="price">Php 25</p>
-                        </td>
+                                <tr>
+                                <th scope="row"class="product" ><img src="BakedSalmon2.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Baked Salmon</td>
+                                <td>Php 230</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
+                                        
+                                <tr>
+                                <th scope="row"class="product" ><img src="BBcheescake.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Blueberry Cheesecake<br>(8x8 Pan) </td>
+                                <td>Php 750</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                        <td style="width: 15%;">
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextranori">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
+                                <tr>
+                                <th scope="row"class="product" ><img src="BBcheescake.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Blueberry Cheesecake<br>(6" jr. cake) </td>
+                                <td>Php 550</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Spicy</b>
-                            <p class="price">Php 30</p>
-                        </td>
+                                <tr>
+                                <th scope="row"class="product" ><img src="BBcheescake.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Blueberry Cheesecake<br>(7" tub cake) </td>
+                                <td>Php 650</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextraspicy">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
+                                <tr>
+                                <th scope="row"class="product" ><img src="BBcheescake.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Blueberry Cheesecake<br>(5" aluminum pan) </td>
+                                <td>Php 550</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Cheese</b>
-                            <p class="price">Php 30</p>
-                        </td>
+                                <tr>
+                                <th scope="row"class="product" ><img src="ChocoChip.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Choco Chip Cookies</td>
+                                <td>Php 120</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextracheese">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
+                                <tr>
+                                <th scope="row"class="product" ><img src="Crinkles.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Crinkles</td>
+                                <td>Php 120</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
 
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Brown Rice (Small Pan)</b>
-                            <p class="price">Php 10</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qsmallbrownrice">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Brown Rice (Medium Pan)</b>
-                            <p class="price">Php 20</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qmediumbrownrice">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-                    </table>
+                                <tr>
+                                <th scope="row"class="product" ><img src="SugarCookies.png" alt=""style="height: 100px; border: solid; border-radius:10px; border-color:rgb(233, 213, 213);"></th>
+                                <td>Sugar Cookies</td>
+                                <td>Php 90</td>
+                                <td>0</td>
+                                <td>0.00</td>  
+                                </tr>
+                            </tbody>    
+                            
+                        </table>
+                    </div>
+                        <p class="total">Total: Php <span class="totalprice"></span></p>
+                    </div>
                 </div>
-
             </div>
 
-
+            <!-- Submit button -->
             <div class="row g-1 justify-content-center">
                 <div class="col-10">
-                <button onclick="ValidDateFunction()" class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Submit form</button>
+                <button class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Submit form</button>
                 </div>
             </div>
 
@@ -444,7 +404,7 @@ function ValidDateFunction() {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-      <!-- Kate's Part -->
+      <!-- Footer -->
 
     <footer class="footer"> 
         <div class="socialinks">
