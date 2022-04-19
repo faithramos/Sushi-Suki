@@ -21,8 +21,8 @@
         var today = new Date();
         var next2week = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 
-        var QmediumMaki = document.getElementById("QmediumMaki");
-        var QsmallMaki = document.getElementById( "QsmallMaki" );
+        var QmediumMaki = document.getElementById("QmediumMaki").value;      
+        var QsmallMaki = document.getElementById( "QsmallMaki" ).value;
         var Qbakedsalmon = document.getElementById( "Qbakedsalmon" );
         var Qcheesecake8 = document.getElementById( "Qcheesecake8" );
         var Qcheesecake7 = document.getElementById( "Qcheesecake7" );
@@ -57,7 +57,11 @@
         function displayDiv() {
         document.getElementById("checkoutdiv").style.display = "";
         }
-    
+        
+        function docWrite(variable) {
+        document.write(variable);
+        }
+           
     </script>
 
 
@@ -173,7 +177,7 @@
 
             <div class="row g-1 justify-content-center">
                 <div class="col-10">
-                <button onclick="displayDiv()" class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Proceed</button>
+                <button onclick="displayDiv()" class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600; margin-top: 30px; margin-bottom: 30px; font-size: larger;">Proceed</button>
                 </div>
             </div>
 
@@ -188,24 +192,24 @@
                 <p class="checkout">Checkout</p>
 
             
-                    <div class="row g-4 justify-content-center">
+                    <div class="row g-3 justify-content-center">
                         <p class="category">Main Dishes</p>
                         <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
                             <img src="MediumMaki.png" style="width: 100%" class="border rounded-3">
                             <b class="checkoutname"> Baked Cali Maki </b>
-                            <p class="subcheckout"> Medium Pan ()</p>
+                            <p class="subcheckout"> Medium Pan (8x8) with 3 packs Nori </p>
                             <p class="price">Php 380</p>
                             <div class="number-input">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                                 <input class="quantity" min="0" name="quantity" value="0" type="number" id="QmediumMaki">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp();" class="plus"></button>
                             </div>
                         </div>
 
                         <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
                             <img src="SmallMaki.png" style="width: 100%" class="border rounded-3">
                             <b class="checkoutname"> Baked Cali Maki </b>
-                            <p class="subcheckout"> Medium Sized Pan ()</p>
+                            <p class="subcheckout"> Small Sized Pan (5x4) with 2 packs Nori</p>
                             <p class="price">Php 250</p>
                             <div class="number-input">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
@@ -227,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="row g-2  justify-content-center">
+                    <div class="row g-3 justify-content-center">
 
                         <p class="category">Desserts</p>
 
@@ -305,9 +309,9 @@
                             </td>
                         </table>
                 
-                </div>   
+                    </div>   
 
-                <div class="row g-5 justify-content-center" style="margin: 30px;">
+                <div class="row g-2 justify-content-center" style="margin: 30px;">
                 
                     <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
                         <img src="ChocoChip.png" style="width: 100%" class="border rounded-3">
@@ -348,7 +352,7 @@
 
                 </div>
 
-                <div class="row g-5 justify-content-center">
+                <div class="row g-2 justify-content-center">
                     <p class="category">Add-Ons</p>
 
                     <div class="table table-borderless col-md-5 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
@@ -437,7 +441,7 @@
 
                 <!-- order total -->
 
-                <div class="col-md-10" >
+                <div class="col-md-10"  style="margin-top: 100px;">
                     <div class="table-responsive">
                         <div class="table-wrapper">
                         <table id="TotalTable" class="table">
@@ -454,11 +458,9 @@
                             <tbody class="ordertotaltd">
                                 <tr>
                                 <th scope="row" class="product" ><img src="MediumMaki.png" alt=""style="height: 100px;  border: solid; border-radius:10px; border-color:rgb(233, 213, 213);">  </th>
-                                <td>Baked Cali Maki <br> (Medium )</td>
+                                <td>Baked Cali Maki <br> (Medium)</td>
                                 <td>Php 380</td>
-                                <td><script type="text/javascript">
-                                    document.write(QmediumMaki)
-                                  </script></td>
+                                <td><p><script>docWrite(QmediumMaki)</script></p> </td>
                                 <td>0.00</td>         
                                 </tr>
 
@@ -587,12 +589,14 @@
 
             <div class="row g-1 justify-content-center">
                 <div class="col-10">
-                <button class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Submit form</button>
+                <button class="btn" onclick="show()" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600; margin-top: 30px; margin-bottom: 30px; font-size: larger;">Submit form</button>
                 </div>
             </div>
         
         </form>     
     </div>
+
+
         
         
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
