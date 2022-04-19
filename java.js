@@ -1,4 +1,4 @@
-    var deliveryDate = document.getElementById( "deliveryDate" );
+var deliveryDate = document.getElementById( "deliveryDate" );
     var today = new Date();
     var next2week = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 
@@ -46,6 +46,3 @@
     function showDiv() {
         document.getElementById('checkout').style.display = "block";
     }
-
-    function
-
