@@ -46,3 +46,4 @@ var deliveryDate = document.getElementById( "deliveryDate" );
     function showDiv() {
         document.getElementById('checkout').style.display = "block";
     }
+
