@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-    <script>
+    <script type="text/javascript">
         var deliveryDate = document.getElementById( "deliveryDate" );
         var today = new Date();
         var next2week = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 
-        var QmediumMaki = document.getElementById( "QmediumMaki" );
+        var QmediumMaki = document.getElementById("QmediumMaki");
         var QsmallMaki = document.getElementById( "QsmallMaki" );
         var Qbakedsalmon = document.getElementById( "Qbakedsalmon" );
         var Qcheesecake8 = document.getElementById( "Qcheesecake8" );
@@ -53,9 +53,9 @@
         var Pextracheese = Qextracheese*30
         var Psmallbrownrice = Qsmallbrownrice*10
         var Pmediumbrownrice = Qmediumbrownrice*20
-        
-        function myFunction() {
-        document.getElementById("ilangMaki").value = QmediumMaki;
+    
+        function displayDiv() {
+        document.getElementById("checkoutdiv").style.display = "";
         }
     
     </script>
@@ -171,251 +171,272 @@
                 </div>
             </div>
 
+            <div class="row g-1 justify-content-center">
+                <div class="col-10">
+                <button onclick="displayDiv()" class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Proceed</button>
+                </div>
+            </div>
+
+        
+
+
+
+            <div id="checkoutdiv" style="display: none;">
+
                     
 
-            <p class="checkout">Checkout</p>
-            <div class="row g-4 justify-content-center">
-                <p class="category">Main Dishes</p>
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="MediumMaki.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname"> Baked Cali Maki </b>
-                    <p class="subcheckout"> Medium Pan ()</p>
-                    <p class="price">Php 380</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="QmediumMaki">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                <p class="checkout">Checkout</p>
+
+            
+                    <div class="row g-4 justify-content-center">
+                        <p class="category">Main Dishes</p>
+                        <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                            <img src="MediumMaki.png" style="width: 100%" class="border rounded-3">
+                            <b class="checkoutname"> Baked Cali Maki </b>
+                            <p class="subcheckout"> Medium Pan ()</p>
+                            <p class="price">Php 380</p>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="QmediumMaki">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                            <img src="SmallMaki.png" style="width: 100%" class="border rounded-3">
+                            <b class="checkoutname"> Baked Cali Maki </b>
+                            <p class="subcheckout"> Medium Sized Pan ()</p>
+                            <p class="price">Php 250</p>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="QsmallMaki">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                            <img src="BakedSalmon2.png" style="width: 100%" class="border rounded-3">
+                            <b class="checkoutname"> Baked Salmon </b>
+                            <p class="subcheckout"> Medium Sized Pan ()</p>
+                            <p class="price">Php 230</p>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qbakedsalmon">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="SmallMaki.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname"> Baked Cali Maki </b>
-                    <p class="subcheckout"> Medium Sized Pan ()</p>
-                    <p class="price">Php 250</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="QsmallMaki">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                </div>
+                    <div class="row g-2  justify-content-center">
 
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="BakedSalmon2.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname"> Baked Salmon </b>
-                    <p class="subcheckout"> Medium Sized Pan ()</p>
-                    <p class="price">Php 230</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qbakedsalmon">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                </div>
-            </div>
+                        <p class="category">Desserts</p>
 
-            <div class="row g-2  justify-content-center">
+                        <table class="col-md-10 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
 
-                <p class="category">Desserts</p>
+                            <td class="justify-content-center" style="width: 25%; padding: 20px;">
+                                <img src="BBcheescake.png" style="width: 100%" class="border rounded-3">
+                                
+                            </td>
 
-                <table class="col-md-10 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
+                            <td class="col-md-9 justify-content-center rounded-end rounded-3" style="background-color: rgb(233, 213, 213);">
+                                                        
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <h1 style="color:black; margin-top: 35px;"> Blueberry Cheesecake</h1> 
+                                    </tr>
 
-                    <td class="justify-content-center" style="width: 25%; padding: 20px;">
-                        <img src="BBcheescake.png" style="width: 100%" class="border rounded-3">
-                        
-                    </td>
+                                    <tr>
+                                        <td>
+                                            <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">8x8 Pan</b>
+                                            <p class="cheesecakeprice">Php 750</p>
+                                        </td>
 
-                    <td class="col-md-9 justify-content-center rounded-end rounded-3" style="background-color: rgb(233, 213, 213);">
-                                                
-                        <table class="table table-borderless">
-                            <tr>
-                                <h1 style="color:black; margin-top: 35px;"> Blueberry Cheesecake</h1> 
-                            </tr>
+                                        <td>
+                                            <div class="number-input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake8">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </td>
 
-                            <tr>
-                                <td>
-                                    <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">8x8 Pan</b>
-                                    <p class="cheesecakeprice">Php 750</p>
-                                </td>
+                                        <td>
+                                            <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">7" tub cake</b>
+                                            <p class="cheesecakeprice">Php 650</p>
+                                        </td>
 
-                                <td>
-                                    <div class="number-input">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake8">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                    </div>
-                                </td>
+                                        <td>
+                                            <div class="number-input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake7">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">6" jr. cake</b>
+                                            <p class="cheesecakeprice">Php 550</p>
+                                        </td>
 
-                                <td>
-                                    <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">7" tub cake</b>
-                                    <p class="cheesecakeprice">Php 650</p>
-                                </td>
+                                        <td>
+                                            <div class="number-input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake6">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </td>
 
-                                <td>
-                                    <div class="number-input">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake7">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">6" jr. cake</b>
-                                    <p class="cheesecakeprice">Php 550</p>
-                                </td>
+                                        <td>
+                                            <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">5" aluminum pan</b>
+                                            <p class="cheesecakeprice">Php 450</p>
+                                        </td>
 
-                                <td>
-                                    <div class="number-input">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake6">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <b style="font-family: Prompt, sans-serif; font-size: 25px; color: black;">5" aluminum pan</b>
-                                    <p class="cheesecakeprice">Php 450</p>
-                                </td>
-
-                                <td>
-                                    <div class="number-input">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake5">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                    </div>
-                                </td>
-                            </tr>
+                                        <td>
+                                            <div class="number-input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qcheesecake5">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                                        
+                                
+                            </td>
                         </table>
-                                                
-                        
-                    </td>
-                </table>
-            
-            </div>   
-
-            <div class="row g-5 justify-content-center" style="margin: 30px;">
-            
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="ChocoChip.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname2"> Choco Chip Cookies </b>
-                    <p class="subcheckout"> 6 pcs </p>
-                    <p class="price">Php 120</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="chocochip">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                </div>
-
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="Crinkles.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname"> Crinkles </b>
-                    <p class="subcheckout"> 6 pcs</p>
-                    <p class="price">Php 120</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="crinkles">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                </div>
-
-                <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
-                    <img src="SugarCookies.png" style="width: 100%" class="border rounded-3">
-                    <b class="checkoutname"> Sugar Cookies </b>
-                    <p class="subcheckout"> 6 pcs </p>
-                    <p class="price">Php 90</p>
-                    <div class="number-input">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="sugarcookies">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                </div>
                 
+                </div>   
 
-            </div>
+                <div class="row g-5 justify-content-center" style="margin: 30px;">
+                
+                    <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                        <img src="ChocoChip.png" style="width: 100%" class="border rounded-3">
+                        <b class="checkoutname2"> Choco Chip Cookies </b>
+                        <p class="subcheckout"> 6 pcs </p>
+                        <p class="price">Php 120</p>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="chocochip">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        </div>
+                    </div>
 
-            <div class="row g-5 justify-content-center">
-                <p class="category">Add-Ons</p>
+                    <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                        <img src="Crinkles.png" style="width: 100%" class="border rounded-3">
+                        <b class="checkoutname"> Crinkles </b>
+                        <p class="subcheckout"> 6 pcs</p>
+                        <p class="price">Php 120</p>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="crinkles">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        </div>
+                    </div>
 
-                <div class="table table-borderless col-md-5 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
-                    <table style="margin-top: 25px">
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Nori</b>
-                            <p class="price">Php 25</p>
-                        </td>
+                    <div class="col-md-2 rounded-3 justify-content-center" style="padding: 20px; margin: 20px; background-color: rgb(233, 213, 213);">
+                        <img src="SugarCookies.png" style="width: 100%" class="border rounded-3">
+                        <b class="checkoutname"> Sugar Cookies </b>
+                        <p class="subcheckout"> 6 pcs </p>
+                        <p class="price">Php 90</p>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="sugarcookies">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        </div>
+                    </div>
+                    
 
-                        <td style="width: 15%;">
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextranori">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Spicy</b>
-                            <p class="price">Php 30</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextraspicy">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Extra Cheese</b>
-                            <p class="price">Php 30</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextracheese">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Brown Rice (Small Pan)</b>
-                            <p class="price">Php 10</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qsmallbrownrice">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <b class="checkoutname">Brown Rice (Medium Pan)</b>
-                            <p class="price">Php 20</p>
-                        </td>
-
-                        <td>
-                            <div class="number-input">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qmediumbrownrice">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                            </div>
-                        </td>
-                    </tr>
-                    </table>
                 </div>
+
+                <div class="row g-5 justify-content-center">
+                    <p class="category">Add-Ons</p>
+
+                    <div class="table table-borderless col-md-5 justify-content-center rounded-3" style="background-color: rgb(233, 213, 213);">
+                        <table style="margin-top: 25px">
+                        <tr>
+                            <td>
+                                <b class="checkoutname">Extra Nori</b>
+                                <p class="price">Php 25</p>
+                            </td>
+
+                            <td style="width: 15%;">
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextranori">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <b class="checkoutname">Extra Spicy</b>
+                                <p class="price">Php 30</p>
+                            </td>
+
+                            <td>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextraspicy">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <b class="checkoutname">Extra Cheese</b>
+                                <p class="price">Php 30</p>
+                            </td>
+
+                            <td>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qextracheese">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <b class="checkoutname">Brown Rice (Small Pan)</b>
+                                <p class="price">Php 10</p>
+                            </td>
+
+                            <td>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qsmallbrownrice">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <b class="checkoutname">Brown Rice (Medium Pan)</b>
+                                <p class="price">Php 20</p>
+                            </td>
+
+                            <td>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="0" type="number" id="Qmediumbrownrice">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+
+        
+              
+
+        
+
                 <!-- order total -->
+
                 <div class="col-md-10" >
                     <div class="table-responsive">
                         <div class="table-wrapper">
@@ -435,7 +456,9 @@
                                 <th scope="row" class="product" ><img src="MediumMaki.png" alt=""style="height: 100px;  border: solid; border-radius:10px; border-color:rgb(233, 213, 213);">  </th>
                                 <td>Baked Cali Maki <br> (Medium )</td>
                                 <td>Php 380</td>
-                                <td><p id="ilangMaki">0</p></td>
+                                <td><script type="text/javascript">
+                                    document.write(QmediumMaki)
+                                  </script></td>
                                 <td>0.00</td>         
                                 </tr>
 
@@ -522,10 +545,11 @@
 
             <div class="row g-1 justify-content-center">
                 <div class="col-10">
-                <button onclick="ValidDateFunction()" class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Submit form</button>
+                <button class="btn" type="submit" style="background-color: rgb(226, 74, 13); color:white; font-weight: 600;">Submit form</button>
                 </div>
             </div>
-        </form>
+        
+        </form>     
     </div>
         
         
@@ -535,7 +559,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="java.js"></script>
 
       <!-- Kate's Part -->
 
