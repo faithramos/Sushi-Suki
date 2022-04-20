@@ -62,6 +62,13 @@
             var QmediumMaki = document.getElementById("QmediumMaki").value;
             document.getElementById("myText").innerHTML = QmediumMaki;
         }
+
+        function changeCss () {
+  var bodyElement = document.querySelector("body");
+  var navElement = document.querySelector("nav");
+  this.scrollY > 500 ? navElement.style.opacity = .8 : navElement.style.opacity = 1;
+}
+window.addEventListener("scroll", changeCss , false);
            
     </script>
 
