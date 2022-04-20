@@ -21,7 +21,7 @@
         var today = new Date();
         var next2week = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 
-        var QmediumMaki = document.getElementById("QmediumMaki").value;      
+        var QmediumMaki = document.getElementById("QmediumMaki");      
         var QsmallMaki = document.getElementById( "QsmallMaki" ).value;
         var Qbakedsalmon = document.getElementById( "Qbakedsalmon" );
         var Qcheesecake8 = document.getElementById( "Qcheesecake8" );
@@ -58,8 +58,9 @@
         document.getElementById("checkoutdiv").style.display = "";
         }
         
-        function docWrite(variable) {
-        document.write(variable);
+        function myFunction() {
+            var QmediumMaki = document.getElementById("QmediumMaki").value;
+            document.getElementById("myText").innerHTML = QmediumMaki;
         }
            
     </script>
@@ -68,7 +69,7 @@
 </head>
 
 
-<body>
+<body onload="myFunction()">
     <header>
         <div>
             <nav class="align-items-center">
@@ -460,7 +461,7 @@
                                 <th scope="row" class="product" ><img src="MediumMaki.png" alt=""style="height: 100px;  border: solid; border-radius:10px; border-color:rgb(233, 213, 213);">  </th>
                                 <td>Baked Cali Maki <br> (Medium)</td>
                                 <td>Php 380</td>
-                                <td><p><script>docWrite(QmediumMaki)</script></p> </td>
+                                <td><span id="myText"></span></td>
                                 <td>0.00</td>         
                                 </tr>
 
