@@ -41,7 +41,7 @@ h5 {
   color: rgb(226, 74, 13);
   font-size: 300%;
   text-align: center;
-  padding:  40px;
+  padding-top:  80px;
 }
 
 .checkout {
@@ -51,6 +51,14 @@ h5 {
   font-size: 250%;
   text-align: center;
   padding:  10px;
+}
+
+.category {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 180%;
+  text-align: center;
 }
 
 nav li {
@@ -100,7 +108,7 @@ label {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
 }
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: rgb(235, 173, 148); 
+  background-color: rgb(235, 173, 148);
 }
 
 input[type="number"] {
@@ -115,7 +123,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .number-input {
-  border: 2px solid #ddd;
+  border: 2px solid rgb(0, 0, 0);
   display: inline-flex;
 }
 
@@ -136,12 +144,13 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   margin: 0;
   position: relative;
+  background-color: white;
 }
 
 .number-input button:after {
   display: inline-block;
   position: absolute;
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: '\f077';
   transform: translate(-50%, -50%) rotate(180deg);
@@ -151,13 +160,226 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .number-input input[type=number] {
-  font-family: sans-serif;
+  font-family: 'Prompt', sans-serif;
   max-width: 5rem;
   padding: .5rem;
-  border: solid #ddd;
+  border: solid rgb(0, 0, 0);
   border-width: 0 2px;
   font-size: 2rem;
   height: 3rem;
   font-weight: bold;
   text-align: center;
+}
+
+.checkoutname{
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.checkoutname2{
+  font-family: 'Prompt', sans-serif;
+  font-size: auto;
+  color: black;
+}
+
+.subcheckout{
+  font-family: 'Prompt', sans-serif;
+  color: black;
+}
+
+.price{
+  font-size: 'Prompt', sans-serif;
+  color: rgb(226, 74, 13);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.cheesecakeprice{
+  font-size: 'Prompt', sans-serif;
+  color: rgb(226, 74, 13);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+/*Kate's Part*/
+
+   
+thead, th.product{
+background-color: rgb(233, 213, 213);
+text-align: center;
+font-family: 'Prompt';
+font-size: large;
+position: sticky;
+}
+
+.ordertotaltd{
+  color: rgb(233, 213, 213);
+  text-align: center;
+  font-size: larger;
+  font-family: 'Prompt';
+  
+}
+
+.table-wrapper{
+  overflow-y: scroll;
+  width: 100%;
+  align-items: center;
+  max-height: 430px;
+  
+}
+
+p.total{
+  font-size: 20px;
+  font-family: 'Prompt';
+  padding-top: 10px;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer{
+  padding: 50px;
+  background-color: rgb(248, 215, 175);
+
+}
+
+.socialinks {
+  text-align: center;
+  padding-bottom: 25px;
+  color: brown;
+
+}
+
+.socialinks a{
+  font-size: 40px;
+  color:inherit;
+  width: 80px;
+  display: inline-block;
+
+}
+.socialinks a:hover{
+  color: rgb(212, 131, 8);
+  opacity: 0.8;
+}
+
+.list {
+
+  font-size: 20px;
+  font-family: 'Prompt';
+  text-align: center;
+  color: brown;
+}
+
+.list a:hover{
+  color: rgb(212, 131, 8);
+}
+
+.list a{
+  color: inherit;
+  text-decoration: none;
+  padding: 0 25px;
+ margin-bottom: 30px;
+}
+
+.emailbox{
+  font-family: 'Prompt';
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.emailbox i{
+  color: rgb(77, 20, 20);
+  background-color: rgb(207, 156, 80);
+  width: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.emailbox button, input{
+border: none;
+outline: none;
+}
+
+.emailbox button{
+  background: rgb(207, 156, 80);
+  padding:0 20px;
+  height: 60px;
+  color:rgb(77, 20, 20);
+  font-size: 20px;
+}
+
+.inputfooter{
+  width: 0px;
+  transition: 0.8s;
+}
+
+.email{
+  line-height: 45px;
+  border: none;
+  outline: none;
+}
+
+.email:hover> input,input:focus{
+  width: 300px;
+  padding: 0 10px;
+}
+
+.textandc {
+  text-align: center;
+  color: white;
+  font-size: 160%;
+  padding: 7%;
+  background-color: black;
+}
+
+.imagetandc {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 50%;
+}
+
+
+.tandc {
+  margin: 30px 0;
+  line-height: 1.6;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 100%;
+  text-align: left;
+}
+
+.tandc2 {
+  margin: 30px 0;
+  line-height: 1.6;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: 'Prompt', sans-serif;
+  color: rgb(226, 74, 13);
+  font-size: 100%;
+  text-align: left;
+}
+
+.titleandc{
+  background-color:rgb(225, 225, 225);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
 }
