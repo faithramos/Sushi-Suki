@@ -34,41 +34,83 @@
         </div>
     </header>
 
-    <div class="content";>
+    <div class="content" style="padding-bottom: 80px;">
         <h2 class = "title-menu">Menu</h2>
         
         
 
         <div class="row g-5 justify-content-center">
 
-            <iframe class = "justify-content-center" width="800" height="400" src="https://www.youtube.com/embed/w6SC3uzlwjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-md-7 justify-content-center">
+                <iframe width="750" height="400" src="https://www.youtube.com/embed/w6SC3uzlwjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
             <div class ="item1 col-md-5 rounded-3" style="margin: 30px;">
-                <h2 class = "name-item1">Baked California Maki</h2>
+                <h2 class = "name-item">Baked California Maki</h2>
                 <img class = "img-item" src = "MediumMaki.png" alt= "Baked California Maki Sushi">
-                <p class = "desc-item1"><b>Sushi-Suki's take on the classic Cali Maki sushi, baked. Our signature menu item!</b> <br> <i>Contains nori, cucumber, crab, cheese and mayonnaise.</i></p>
+                <p class = "desc-item"><b>Sushi-Suki's take on the classic Cali Maki sushi, baked. Our signature menu item!</b> <br> <i> Available in:<br> - 8x8 pan (w/ 3 packs nori) <br> - 5x4 pans (w/ 2 packs nori)</i></p>
             </div>
 
             <div class ="item2 col-md-5 rounded-3" style="margin: 30px;">
-                <h2 class = "name-item2">Baked Salmon</h2>
+                <h2 class = "name-item">Baked Salmon</h2>
                 <img class = "img-item" src = "BAKEDSALMON.jpg" alt= "Baked Salmon">
-                <p class = "desc-item2"><b>Tasty baked salmon dish with flavors of citrus and butter, garnished with herbs.</b> <br> <i>Contains salmon.</i></p> 
+                <p class = "desc-item"><b>Tasty baked salmon dish with flavors of citrus and butter, garnished with herbs.</b> <br> <i>Contains salmon.</i></p> 
             </div>
 
             <div class ="item3 col-md-5 rounded-3" style="margin: 30px;">
-                <h2 class = "name-item3">Blueberry Cheesecake</h2>
+                <h2 class = "name-item">Blueberry Cheesecake</h2>
                 <img class = "img-item" src = "blueberry cheescake.jpg" alt = "Blueberry Cheesecake">
-                <p class = "desc-item3"><b>Rich blueberry cheesecake, with the perfect amount of sweetness. Best served chilled.</b> <br> <i>Contains blueberries, cream cheese, and other dairy products.</i></p>
+                <p class = "desc-item"><b>Rich blueberry cheesecake, with the perfect amount of sweetness. Best served chilled.</b> <br> <i>Available in sizes 8", 7", 6" and 5" pans.</i></p>
             </div>
 
             <div class ="item4 col-md-5 rounded-3" style="margin: 30px;">
-                <h2 class = "name-item4">Chocolate Chip Cookies</h2>
+                <h2 class = "name-item">Chocolate Chip Cookies</h2>
                 <img class = "img-item" src = "cookies.jpg" alt = "Chocolate Chip Cookies">
-                <p class = "desc-item4"><b>Golden brown chocolate chip cookies.</b> <br> <i>Contains chocolate and dairy products.</i></p>
+                <p class = "desc-item"><b>Golden brown chocolate chip cookies.</b> <br> <i>Contains chocolate and dairy products.</i></p>
+            </div>
+
+            <div class ="item3 col-md-5 rounded-3" style="margin: 30px;">
+                <h2 class = "name-item">Crinkles</h2>
+                <img class = "img-item" src = "Crinkles.png" alt = "Crinkles">
+                <p class = "desc-item"><b>Rich blueberry cheesecake, with the perfect amount of sweetness. Best served chilled.</b> <br> <i>Contains blueberries, cream cheese, and other dairy products.</i></p>
+            </div>
+
+            <div class ="item3 col-md-5 rounded-3" style="margin: 30px;">
+                <h2 class = "name-item">Sugar Cookies</h2>
+                <img class = "img-item" src = "SugarCookies.png" alt = "Sugar Cookies">
+                <p class = "desc-item"><b>Rich blueberry cheesecake, with the perfect amount of sweetness. Best served chilled.</b> <br> <i>Contains blueberries, cream cheese, and other dairy products.</i></p>
             </div>
 
         </div>
+
+
     </div>
+
+    <footer class="footer">
+        <div class="socialinks">
+            <a href="https://www.instagram.com/victoriassweetescape/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/victoriassweetescape"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <div class="list">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="terms&conditions.html">Terms and Conditions</a>
+        </div>
+
+        <!--The box where you enter your email-->
+
+        <div class="emailbox">
+            <i class="fa fa-envelope fa-2x"></i>
+            <form class="email">
+            <input class="inputfooter" type = "email" id="email" value="" placeholder="Enter your email" required>
+            <button class="subscribe" type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Subscribe Now!
+            </button>
+            </form>
+        </div>
+
+    </footer>
 </body>
 </html>
 

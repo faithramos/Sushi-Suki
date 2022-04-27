@@ -9,10 +9,11 @@ nav {
   position: fixed;
   width: 100%;
   height: auto;
+  z-index: 100;
 }
 
-nav a {
-  text-decoration: none;
+nav a:hover{
+  color: rgb(212, 131, 8);
 }
 
 li{
@@ -335,6 +336,8 @@ outline: none;
   padding: 0 10px;
 }
 
+/*Fitzroy's Part*/
+
 .textandc {
   text-align: center;
   color: white;
@@ -398,11 +401,16 @@ outline: none;
   font-size: 75px;
   color: rgb(226, 74, 13);
   text-align: center;
-  padding: 20px;
+  padding-top: 90px;
   position: static;
   left: 525px;
   letter-spacing: 3px;
 }
+
+iframe{
+  margin-bottom: 90px;
+}
+
 
 .item1{
   background-image: linear-gradient(rgb(237, 152, 118), white);
@@ -413,22 +421,22 @@ outline: none;
   float: left;
 }
 
-.name-item1{
+.name-item{
   font-size: 35px;
   font-weight: 1000;
   margin: 15px;
 }
 
 .img-item{
-  width: 50%;
+  width: 45%;
   margin-left: 15px;
   margin-bottom: 20px;
   float: left;
 }
 
-.desc-item1{
+.desc-item{
   font-size: 20px;
-  width: 42%;
+  width: 46%;
   float: right;
   margin-right: 15px;
   text-align: left;
@@ -443,27 +451,6 @@ outline: none;
   float: right;
 }
 
-.name-item2{
-  font-size: 35px;
-  font-weight: 1000;
-  margin: 15px;
-}
-
-.img-item2{
-  width: 300px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  float: left;
-}
-
-.desc-item2{
-  font-size: 20px;
-  width: 42%;
-  float: right;
-  margin-right: 15px;
-  text-align: left;
-}
-
 .item3{
   background-image: linear-gradient(rgb(237, 152, 118), white);
   margin-left: 80px;
@@ -473,27 +460,6 @@ outline: none;
   float: left;
 }
 
-.name-item3{
-  font-size: 35px;
-  font-weight: 1000;
-  margin: 15px;
-}
-
-.img-item3{
-  width: 300px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  float: left;
-}
-
-.desc-item3{
-  font-size: 20px;
-  width: 42%;
-  float: right;
-  margin-right: 15px;
-  text-align: left;
-}
-
 .item4{
   background-image: linear-gradient(rgb(237, 152, 118), white);
   margin-right: 80px;
@@ -501,25 +467,4 @@ outline: none;
   width: 42%;
   position: static;
   float: right;
-}
-
-.name-item4{
-  font-size: 35px;
-  font-weight: 1000;
-  margin: 15px;
-}
-
-.img-item4{
-  width: 300px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  float: left;
-}
-
-.desc-item4{
-  font-size: 20px;
-  width: 42%;
-  float: right;
-  margin-right: 15px;
-  text-align: left;
 }
